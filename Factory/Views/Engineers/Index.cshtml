@@ -1,8 +1,6 @@
 @{
     Layout = "_Layout";
-} 
-
-@using Factory.Models
+} @using Factory.Models
 
 <h1>Engineers</h1>
 
@@ -12,7 +10,7 @@
 }
 else
 {
-    <ul>
+    <ul class="client-stylist-link">
     @foreach (Engineer engineer in Model)
         {
             <li>
