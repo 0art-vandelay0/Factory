@@ -11,5 +11,10 @@
 
 @if (@Model.JoinEntities.Count == 0)
 {
-    <p>This machine is not assigned to any liscensed engineers.</p>
+    <p>This machine is not assigned to any licensed engineers.</p>
 }
+
+<div id="nav-links">
+    <p>@Html.ActionLink("Machines", "Index", "Machines")</p>
+    <p>@Html.ActionLink("Home", "Index", "Home")</p>
+</div>
