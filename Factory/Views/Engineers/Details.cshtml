@@ -13,6 +13,18 @@
 {
     <p>This engineer is not liscensed to repair any machines.</p>
 }
+else
+{
+    <h4>Machines</h4>
+    <ul>
+        @foreach (var machine in Model.JoinEntities)
+        {
+            <li class="list-margins">@machine.Machine.Name</li>
+        }
+    </ul>
+}
+
+<p>@Html.ActionLink("Add Machine", "AddMachine", "Engineers", new {id = Model.EngineerId})</p>
 
 <div id="nav-links">
     <p>@Html.ActionLink("Engineers", "Index", "Engineers")</p>
