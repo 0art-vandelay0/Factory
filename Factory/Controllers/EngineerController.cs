@@ -20,6 +20,19 @@ namespace Factory.Controllers
             return View(_db.Engineers.ToList());
         }
 
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Engineer engineer)
+        {
+            _db.Engineers.Add(engineer);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 
 }
