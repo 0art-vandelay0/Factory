@@ -16,10 +16,10 @@
 else
 {
     <h4>Engineers with a license for this machine:</h4>
-    <ul>
+    <ul class="engineer-machine-link">
         @foreach (var engineer in Model.JoinEntities)
         {
-            <li class="list-margins">@engineer.Engineer.Name</li>
+            <li class="list-margins">@Html.ActionLink($"{engineer.Engineer.Name}", "Details", "Engineers", new {id = engineer.EngineerId})</li>
         }
     </ul>
 }
