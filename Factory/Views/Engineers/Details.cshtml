@@ -17,7 +17,7 @@
             else
             {
                 <h3>Machines:</h3>
-                <ul class="client-stylist-link">
+                <ul class="engineer-machine-link">
                     @foreach (var machine in Model.JoinEntities)
                     {
                             <li class="list-margins">@Html.ActionLink($"{machine.Machine.Name}", "Details", "Machines", new {id = machine.MachineId})</li>

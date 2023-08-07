@@ -125,7 +125,7 @@ ul {
 }
 
 /* Removes left padding from li/ul */
-ul.client-stylist-link {
+ul.engineer-machine-link {
     padding-left: 0;
     margin-top: 25px;
 }
@@ -215,7 +215,7 @@ ul.client-stylist-link {
     border-color: rgb(150, 150, 150);
 }
 
-#stylist-deets {
+#object-deets {
     margin-top: 50px;
 }
 
