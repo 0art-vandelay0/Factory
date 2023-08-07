@@ -5,8 +5,6 @@
 @model Factory.Models.Machine
 
 <h3>Add Engineer</h3>
-
-<p>@Html.ValidationMessageFor(model => model.Name)</p>
 @using (Html.BeginForm()) 
 {
     @Html.LabelFor(model => model.Name)
@@ -15,6 +13,8 @@
     <br>
 
     <input type="submit" value="Add" />
+
+    <p class="invalid-input">@Html.ValidationMessageFor(model => model.Name)</p>
 }
 
 <div id="nav-links">
