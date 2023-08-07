@@ -192,6 +192,12 @@ ul.engineer-machine-link {
     color: rgb(129, 166, 147);
 }
 
+.field-validation-error {
+    color: rgb(193, 91, 91);
+    font-size: 18px;
+    font-weight: bold;
+}
+
 #client-deets {
     margin-top: 50px;
     margin-bottom: 50px;
