@@ -245,3 +245,16 @@ ul.engineer-machine-link {
     letter-spacing: .05em;
     border-color: rgb(150, 150, 150);
 }
+
+.add-to-list {
+    margin-top: 50px;
+}
+
+.add-to-list a{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: 3px solid black;
+    background-color: rgb(163, 155, 152);
+    border-radius: 15px;
+}

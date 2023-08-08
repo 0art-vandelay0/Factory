@@ -5,9 +5,7 @@
 @using Factory.Models
 @model Factory.Models.Machine
 
-<h2>Machines</h2>
-
-<h3>@Model.Name</h3>
+<h1 class="display-name">@Model.Name</h1>
 
 @if (@Model.JoinEntities.Count == 0)
 {
@@ -24,8 +22,12 @@ else
     </ul>
 }
 
+
+    <p class="add-to-list">@Html.ActionLink("Add Engineer Here", "AddEngineer", "Machines", new {id = Model.MachineId})</p>
+
 <div id="nav-links">
     <p>@Html.ActionLink("Machines", "Index", "Machines")</p>
     <p>@Html.ActionLink("Home", "Index", "Home")</p>
     <p>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId })</p>
+    <p>@Html.ActionLink("Delete Machine", "Delete", new { id = Model.MachineId })</p>
 </div>
