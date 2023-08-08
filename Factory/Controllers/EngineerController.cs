@@ -70,6 +70,28 @@ namespace Factory.Controllers
             return RedirectToAction("Details", new { id = engineer.EngineerId });
         }
 
+        public ActionResult Edit(int id)
+        {
+            Engineer thisEngineer = _db.Engineers.FirstOrDefault(engineer => engineer.EngineerId == id);
+            ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "Name");
+            return View(thisEngineer);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Engineer engineer)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(engineer);
+            }
+            else
+            {
+                _db.Entry(engineer).State = EntityState.Modified;
+                _db.SaveChanges();
+                return RedirectToAction("Index", new { id = engineer.EngineerId });
+            }
+        }
+
     }
 
 }
