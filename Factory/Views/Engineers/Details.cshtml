@@ -12,17 +12,17 @@
 
     @if (@Model.JoinEntities.Count == 0)
             {
-                <h3>This engineer is not liscensed to repair any machines.</h3>
+            <h3>This engineer is not liscensed to repair any machines.</h3>
             }
             else
             {
-                <h3>Machines:</h3>
-                <ul class="engineer-machine-link">
+            <h3>Machines:</h3>
+            <ul class="engineer-machine-link">
                     @foreach (var machine in Model.JoinEntities)
                     {
-                            <li class="list-margins">@Html.ActionLink($"{machine.Machine.Name}", "Details", "Machines", new {id = machine.MachineId})</li>
+                        <li class="list-margins">@Html.ActionLink($"{machine.Machine.Name}", "Details", "Machines", new {id = machine.MachineId})</li>
                     }
-                </ul>
+            </ul>
             }
 </div>
 
@@ -31,4 +31,5 @@
     <p>@Html.ActionLink("Add Machine", "AddMachine", "Engineers", new {id = Model.EngineerId})</p>
     <p>@Html.ActionLink("Engineers", "Index", "Engineers")</p>
     <p>@Html.ActionLink("Home", "Index", "Home")</p>
+    <p>@Html.ActionLink("Edit Engineer", "Edit", "Engineers", new { id = Model.EngineerId })</p>
 </div>
