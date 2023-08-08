@@ -29,7 +29,9 @@ body {
     color: white;
     margin-bottom: 60px;
     background-image: url("../img/factory.jpg");
-    background-color: rgba(0, 0, 0, 0.65); /* White with 50% transparency */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.65);
     background-blend-mode: darken;
 }
 
@@ -74,8 +76,6 @@ a {
 }
 
 a:hover {
-    /* color: rgb(129, 166, 147); */
-
     color: rgb(192, 183, 59);
     border-color: rgb(196, 168, 11);
 }
@@ -99,7 +99,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* Styles the div that holds the "no client/stylist" message */
+/* Styles the div that holds the "no machines/engineers" message */
 #empty-value-div {
     margin-top: 50px;
     margin-bottom: 50px;
