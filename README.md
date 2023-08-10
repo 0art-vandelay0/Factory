@@ -64,7 +64,7 @@ Use the links at the bottom of the page to navigate to different pages pages.
 
 -   In your terminal:
 
-        Change directory (cd) to Factory.
+    Change directory (cd) to Factory.
 
     ```bash
     $ dotnet buid
@@ -74,7 +74,7 @@ Use the links at the bottom of the page to navigate to different pages pages.
     $ dotnet run
     ```
 
-        -   (or `dontnet watch run` to see edit and see edits in real time).
+    (or `dontnet watch run` to see edit and see edits in real time).
 
 -   A web page will automatically open in your browser
 -   Use the navigation at the bottom of the page to view Engineers or Machines (both will be empty to start)
