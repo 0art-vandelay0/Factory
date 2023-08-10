@@ -36,12 +36,13 @@ Use the links at the bottom of the page to navigate to different pages pages.
 <summary> Initial Setup </summary>
 
 -   Clone this repository to your local machine.
+    -   `$ git clone https://github.com/0art-vandelay0/Factory.git`
 -   Open VS Code (or your IDE of choice).
 -   Open the top level directory you just cloned.
 </details>
 
 <details>
-<summary> Database Setup** </summary>
+<summary> Database Setup </summary>
 
 -   Use a MySql RDBMS like MySql Workbench to import/upload the `casey_hill.sql` file and create your database.
 -   In your Factory Directory, create a file with the name `appsettings.json` and copy and past the following code into this file:
