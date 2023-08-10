@@ -32,13 +32,16 @@ Use the links at the bottom of the page to navigate to different pages pages.
 
 ## **Setup/Installation Requirements** &#x1F4BB;
 
-> ### **Initial Setup**
+<details>
+<summary> Initial Setup </summary>
 
 -   Clone this repository to your local machine.
 -   Open VS Code (or your IDE of choice).
 -   Open the top level directory you just cloned.
+</details>
 
-> ### **Database Setup**
+<details>
+<summary> Database Setup** </summary>
 
 -   Use a MySql RDBMS like MySql Workbench to import/upload the `casey_hill.sql` file and create your database.
 -   In your Factory Directory, create a file with the name `appsettings.json` and copy and past the following code into this file:
@@ -49,6 +52,10 @@ Use the links at the bottom of the page to navigate to different pages pages.
     }<br>
 
 -   Use your personal UID and Password for your db connection and make sure you remove the brackets currently in place.
+</details>
+
+<details>
+<summary> Finish Setup </summary>
 
 -   In your terminal:
 
@@ -59,7 +66,7 @@ Use the links at the bottom of the page to navigate to different pages pages.
 -   A web page will automatically open in your browser
 -   Use the navigation at the bottom of the page to view Engineers or Machines (both will be empty to start)
 -   Follow the links based on what every your needs are.
-
+</details>
 That's it!
 
 #### Debugging
