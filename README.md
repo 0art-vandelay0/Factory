@@ -80,7 +80,6 @@ Use the links at the bottom of the page to navigate to different pages pages.
 -   Use the navigation at the bottom of the page to view Engineers or Machines (both will be empty to start)
 -   Follow the links based on what every your needs are.
 </details>
-That's it!
 
 #### Debugging
 
