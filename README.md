@@ -37,6 +37,9 @@ Use the links at the bottom of the page to navigate to different pages pages.
 
 -   Clone this repository to your local machine.
     <pre></code>$ git clone https://github.com/0art-vandelay0/Factory.git </code></pre>
+    ```bash
+    $ git clone https://github.com/0art-vandelay0/Factory.git
+    ```
 -   Open VS Code (or your IDE of choice).
 -   Open the top level directory you just cloned.
 </details>
