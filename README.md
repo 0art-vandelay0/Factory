@@ -49,10 +49,12 @@ Use the links at the bottom of the page to navigate to different pages pages.
 -   Use a MySql RDBMS like MySql Workbench to import/upload the `casey_hill.sql` file and create your database.
 -   In your Factory Directory, create a file with the name `appsettings.json` and copy and past the following code into this file:
 
-    {<br>
-    &emsp;&emsp;"ConnectionStrings": {<br>
-    &emsp;&emsp;&emsp;&emsp;"DefaultConnection": "Server=localhost;Port=3306;database=factory;uid=[USERNAME-GOES-HERE];pwd=[PASSWORD-GOES-HERE];" }<br>
-    }<br>
+    <pre><code>{
+        "ConnectionStrings": {
+            "DefaultConnection": "Server=localhost;Port=3306;database=factory;uid=root;pwd=epicodus;"
+        }
+    }
+    </code></pre>
 
 -   Use your personal UID and Password for your db connection and make sure you remove the brackets currently in place.
 </details>
@@ -96,11 +98,12 @@ If the program does not run, try the following:
         $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
         ```
 -   Try creating a `global.json` file in the Factory dir that contains the following code to override the default version, if your version exceeds .NET 6.0:<br>
-    {<br>
-    &emsp;&emsp; "sdk": {<br>
-    &emsp;&emsp;&emsp;&emsp;"version": "6.0.402"<br>
-    &emsp;&emsp;}<br>
+    <pre><code>{
+        "sdk": {
+            "version": "6.0.402"
+        }
     }
+    </code></pre>
 
 ## **Known Bugs**
 
