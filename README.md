@@ -67,7 +67,7 @@ Use the links at the bottom of the page to navigate to different pages pages.
     Change directory (cd) to Factory.
 
     ```bash
-    $ dotnet buid
+    $ dotnet build
     ```
 
     ```bash
@@ -84,7 +84,8 @@ That's it!
 
 #### Debugging
 
-If the program does not run, try the following:
+<details>
+<summary> If the program does not run...</summary>
 
 -   Check that you have the appropriate packages installed to run dotnet
     -   In your Terminal, enter the following commands:<br>
@@ -104,6 +105,8 @@ If the program does not run, try the following:
         }
     }
     </code></pre>
+
+    </details>
 
 ## **Known Bugs**
 
