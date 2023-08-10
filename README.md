@@ -36,7 +36,7 @@ Use the links at the bottom of the page to navigate to different pages pages.
 <summary> Initial Setup </summary>
 
 -   Clone this repository to your local machine.
-    -   $ git clone https://github.com/0art-vandelay0/Factory.git
+    <pre></code>$ git clone https://github.com/0art-vandelay0/Factory.git </code></pre>
 -   Open VS Code (or your IDE of choice).
 -   Open the top level directory you just cloned.
 </details>
