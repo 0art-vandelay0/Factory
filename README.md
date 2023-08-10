@@ -36,7 +36,6 @@ Use the links at the bottom of the page to navigate to different pages pages.
 <summary> Initial Setup </summary>
 
 -   Clone this repository to your local machine.
-    <pre></code>$ git clone https://github.com/0art-vandelay0/Factory.git </code></pre>
     ```bash
     $ git clone https://github.com/0art-vandelay0/Factory.git
     ```
@@ -63,9 +62,17 @@ Use the links at the bottom of the page to navigate to different pages pages.
 
 -   In your terminal:
 
-        -   Change directory (cd) to Factory.
-        -   Enter `dotnet build` into your terminal.
-        -   Enter `dotnet run` (or `dontnet watch run` to see edits in real time).
+        Change directory (cd) to Factory.
+
+    ```bash
+    $ dotnet buid
+    ```
+
+    ```bash
+    $ dotnet run
+    ```
+
+        -   (or `dontnet watch run` to see edit and see edits in real time).
 
 -   A web page will automatically open in your browser
 -   Use the navigation at the bottom of the page to view Engineers or Machines (both will be empty to start)
@@ -79,9 +86,15 @@ If the program does not run, try the following:
 
 -   Check that you have the appropriate packages installed to run dotnet
     -   In your Terminal, enter the following commands:<br>
-        `$ dotnet tool install --global dotnet-ef --version 6.0.0`<br>
-        `$ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0`<br>
-        `$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0`
+        ```bash
+        $ dotnet tool install --global dotnet-ef --version 6.0.0
+        ```
+        ```bash
+        $ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+        ```
+        ```bash
+        $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+        ```
 -   Try creating a `global.json` file in the Factory dir that contains the following code to override the default version, if your version exceeds .NET 6.0:<br>
     {<br>
     &emsp;&emsp; "sdk": {<br>
