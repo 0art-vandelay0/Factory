@@ -32,13 +32,13 @@ Use the links at the bottom of the page to navigate to different pages pages.
 
 ## **Setup/Installation Requirements** &#x1F4BB;
 
-### **Initial Setup**
+> ### **Initial Setup**
 
 -   Clone this repository to your local machine.
 -   Open VS Code (or your IDE of choice).
 -   Open the top level directory you just cloned.
 
-### **Database Setup**
+> ### **Database Setup**
 
 -   Use a MySql RDBMS like MySql Workbench to import/upload the `casey_hill.sql` file and create your database.
 -   In your Factory Directory, create a file with the name `appsettings.json` and copy and past the following code into this file:
